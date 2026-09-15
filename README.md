@@ -59,6 +59,7 @@ Under the **Legal Metrology (Packaged Commodities) Rules, 2011**, all pre-packag
                 │
                 ▼
 [ Database & Traceable Storage ] (SQLite / SQLAlchemy -> Excel/CSV Export)
+
 ---
 
 ## 💻 Tech Stack
@@ -80,7 +81,7 @@ bash
 git clone [https://github.com/your-username/metrology-compliance-ai.git](https://github.com/your-username/metrology-compliance-ai.git)
 cd metrology-compliance-ai
 
-###2. Create and Activate a Virtual Environment
+### 2. Create and Activate a Virtual Environment
 # Windows
 python -m venv venv
 .\venv\Scripts\activate
@@ -89,12 +90,16 @@ python -m venv venv
 python3 -m venv venv
 source venv/bin/activate
 
-###3. Install Dependencies
+### 3. Install Dependencies
 
 pip install -r requirements.txt
-###4. Run the Streamlit Application
+
+### 4. Run the Streamlit Application
+
 streamlit run app.py
-###📁 Project Directory Structure
+
+### 📁 Project Directory Structure
+
 metrology-compliance-ai/
 ├── app.py                     # Streamlit frontend with inspection and audit history tabs
 ├── requirements.txt           # Project dependencies
@@ -106,7 +111,10 @@ metrology-compliance-ai/
     ├── detector.py            # HSV color-based statutory emblem detection
     ├── rule_validator.py      # Rule 6 & Rule 26 statutory validation logic
     └── database.py            # SQLAlchemy models and Excel/CSV export utilities
-###📄 Dependency File (requirements.txt)
+
+    
+### 📄 Dependency File (requirements.txt)
+
 streamlit>=1.30.0
 opencv-python-headless>=4.8.0
 easyocr>=1.7.0
